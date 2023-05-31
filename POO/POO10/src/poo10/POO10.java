@@ -23,5 +23,14 @@ public class POO10 {
         SA.llenarMatriz1(A.getArregloA());
         System.out.println("------------------------");
         SA.llenarMatriz1(A.getArregloB());
+        System.out.println("------------------------");
+        SA.ordenarMatriz(A.getArregloA());
+        System.out.println("---------------------------");
+        SA.ordenarMatriz(A.getArregloB());
+        System.out.println("---------------------------");
+        SA.primeros10Numeros(A.getArregloA());
+        
+        
+        //System.out.println("Arreglo A " + A.getArregloA());
     } 
 }

@@ -29,17 +29,32 @@ public class ServiciosArreglo {
         return arreglo1;
     }*/
     
-    public void llenarMatriz1(int[][]matriz){
+    public void llenarMatriz1(double[][]matriz){
         for (int i = 0; i < matriz.length; i++) { //
             for (int j = 0; j <matriz[i].length; j++) {
                 matriz[i][j]=(int)(Math.random()*10);
                 System.out.print(matriz[i][j]);
+                System.out.print(", ");
             }
             System.out.println(" ");
         }
     }
-    public void ordenarMatriz(){
-        
+    public void ordenarMatriz(double[][]matriz){
+        for (int i = 0; i < matriz.length; i++) {
+           Arrays.sort(matriz[i]);       
+           System.out.println(Arrays.toString(matriz[i]));
+        }
+    }
+    public void primeros10Numeros(double[][]matriz){
+        for (int i = 0; i < matriz.length; i++) {
+            Arrays.sort(matriz[i]);
+            if (i >= 0 && i < 9) {
+                matriz[i] = matriz[i];
+            } else {
+                matriz[i] = new double[] { 0.5 };
+            }
+            System.out.println(Arrays.toString(matriz[i]));
+        }
     }
 }
 

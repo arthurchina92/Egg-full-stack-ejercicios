@@ -10,25 +10,25 @@ package Entidades;
  * @author ARTURO
  */
 public class Arreglo {
-    private int arregloA [][] = new int [5][10];
-    private int arregloB [][] = new int [2][10]; 
+    private double arregloA [][] = new double [1][50];
+    private double arregloB [][] = new double [1][20]; 
 
     public Arreglo() {
     }
 
-    public int[][] getArregloA() {
+    public double[][] getArregloA() {
         return arregloA;
     }
 
-    public void setArregloA(int[][] arregloA) {
+    public void setArregloA(double[][] arregloA) {
         this.arregloA = arregloA;
     }
 
-    public int[][] getArregloB() {
+    public double[][] getArregloB() {
         return arregloB;
     }
 
-    public void setArregloB(int[][] arregloB) {
+    public void setArregloB(double[][] arregloB) {
         this.arregloB = arregloB;
     }
 
@@ -36,5 +36,6 @@ public class Arreglo {
     public String toString() {
         return "Arreglo{" + "arregloA=" + arregloA + ", arregloB=" + arregloB + '}';
     }
-  
+
+    
 }
