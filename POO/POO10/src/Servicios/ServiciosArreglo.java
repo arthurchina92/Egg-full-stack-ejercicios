@@ -14,7 +14,7 @@ import java.util.Arrays;
  */
 public class ServiciosArreglo {
     Arreglo arreglo1 = new Arreglo();
-    
+    double matriz1[][]= new double [][];
     
     /*public Arreglo llenarMatriz(){
         int matriz1 [][] = new int[5][10];
@@ -39,20 +39,20 @@ public class ServiciosArreglo {
             System.out.println(" ");
         }
     }
-    public void ordenarMatriz(double[][]matriz){
+    public double ordenarMatriz(double[][]matriz){
+       double matrizB [][] = new double [1][20];
         for (int i = 0; i < matriz.length; i++) {
            Arrays.sort(matriz[i]);       
            System.out.println(Arrays.toString(matriz[i]));
-        }
+           System.arraycopy(matriz, 0, matrizB , 0, 10);
+          
+        }  
+        return double [][] matrizB;
     }
     public void primeros10Numeros(double[][]matriz){
         for (int i = 0; i < matriz.length; i++) {
             Arrays.sort(matriz[i]);
-            if (i >= 0 && i < 9) {
-                matriz[i] = matriz[i];
-            } else {
-                matriz[i] = new double[] { 0.5 };
-            }
+            
             System.out.println(Arrays.toString(matriz[i]));
         }
     }
