@@ -76,6 +76,7 @@ public class CuentaServicios {
                         break;
                     }
                 case 7:
+                    System.out.println("Gracias por haber utilizado nuestros servicios, hasta luego...");
                     break;
                 default:
                     System.out.println("Opcion no valida, intenta otra vez por favor");
@@ -101,7 +102,7 @@ public class CuentaServicios {
     }
 
     public String toString() {
-        System.out.println("Los datos de su cuenta bancaria son:");
+        System.out.println("Los datos de su cuenta bancaria son:" + cuentaBancaria.toString());
         return cuentaBancaria.toString();
     }
 
@@ -112,6 +113,8 @@ public class CuentaServicios {
         int deposito = leer.nextInt();
         cuentaBancaria.setSaldoActual(saldoActual + deposito);
         saldoActual = cuentaBancaria.getSaldoActual();
+        System.out.println("Excelente, su depósito se ha realizado correctamente");
+        System.out.println("Su saldo es de: $ "+ saldoActual);
     }
 
     public void retirar() {
@@ -143,9 +146,5 @@ pondrá el saldo actual en 0.*/
     public void consultarSaldo() {
         int consultaSaldo = cuentaBancaria.getSaldoActual();
         System.out.println("Tu saldo es de: $ " + consultaSaldo);
-    }
-
-    public void consultarDatos() {
-
     }
 }

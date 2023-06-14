@@ -31,7 +31,6 @@ public class POO5 {
     public static void main(String[] args) {
         CuentaServicios cuenta1 = new CuentaServicios();
         cuenta1.menuServicios();
-        System.out.println(cuenta1.toString());
     }
     
 }
